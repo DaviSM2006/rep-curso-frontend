@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JS</title>
+
+    <script>
+        
+        // comentario de uma linha
+        /*
+        var nome = prompt("Digite seu nome");
+
+        alert("Ola " + nome);
+        */
+
+        var nome = "Davi"; // string
+        var idade = 23; // number -> integer
+        var peso = 43.7; // number -> float
+        var acordado = true; // boolean
+
+        // js e dinamico
+        // js e tipagem fraca
+
+
+        /*
+           > maior
+           < menor
+           >= maior ou igual
+           <= menor ou igual
+           == igual
+           != diferente
+        */
+        /*
+           digita o nome de nascimento
+           e calcula a idade
+           > 12 adolescente
+           > 18 adulto
+           > 60 idoso
+           < 12 crianca
+           < 2 bebe
+        */
+    function verifica_idade(){
+        idade = prompt("Digite seu ano de nascimento")
+        idade = (2025 - idade)
+        alert("Sua idade = " + idade)
+        
+        if (idade >= 60)
+        {
+            alert("idoso");
+        } else if (idade >= 18)
+        {
+            alert("adulto");   
+        } else if (idade >=12)
+        {
+            alert("adolescente")
+        } else if (idade >=2)
+        {
+            alert("crianca")
+        } else
+        {
+            alert("bebe")
+        }
+    }
+    function maior()
+    {
+        var n1 = prompt("digite o numero 1");
+        var n2 = prompt("digite o numero 2");
+        var n3 = prompt("digite o numero 3");
+
+        if (n1 > n3)
+        {
+            alert("O numero maior = " + n1);
+        } else if (n1 > n2){
+            alert("O numero maior = " + n1);
+        }
+         else if (n2 > n3){
+            alert("O numero maior = " + n2);
+        }
+        else{
+            alert("O numero maior = " +n3)
+        }
+    }
+    // codigo para chegar se um algoritimo tem
+    // maior valor que outro
+    </script>
+</head>
+<body>
+    <h1>Aula de Javascript</h1>
+    <p>Javascript nao e Java</p>
+    <p>O Js interpretado</p>
+    
+    <button onclick="verifica_idade()">
+        Idade
+    </button>
+    <button onclick="maior()">
+        Numero
+    </button>
+    
+</body>
+</html>
