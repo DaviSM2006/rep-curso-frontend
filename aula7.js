@@ -12,9 +12,9 @@ cidades.push("Colombo");
 // cidades.shift();
 
 // apaga pinhais *array 1
-//cidades.splice(1, 1);
+// cidades.splice(1, 1);
 
-cidades[1] = "Piraquara";
+// cidades[1] = "Piraquara";
 
 
 // loops -> repeticao
@@ -28,6 +28,28 @@ while (ini <= fim)
 
     ini = ini + 1;
 }
+
+
+
+for (var ini = 0; ini <= fim; ini = ini + 1)
+{
+    console.log(cidades[ini]);
+}
+
+// imprimir na ordem inversa *do ultimo para o primeiro valor da array.
+
+var ini = cidades.length - 1; 
+var fim = 0;
+
+while (ini >= fim)
+{
+    console.log(cidades[ini]);
+    ini = ini - 1;
+}
+
+
+
+
 
 var n1 = 2;
 var n2 = 3;
