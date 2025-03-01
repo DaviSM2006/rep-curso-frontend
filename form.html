@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.css" rel="stylesheet">
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="form.js"></script>
+</head>
+<body>
+
+    <div class="container">
+
+       <h1>Cadastro de cliente</h1>
+
+       <div class="col-4 mt-4">
+        <label class="form-label">Nome</label>
+        <input id="nome" class="form-control" type="text" />
+        <div class="invalid-feedback">O nome e obrigatorio</div>
+       </div>
+       <div class="col-4 mt-4">
+        <label class="form-label">Telefone</label>
+        <input id="telefone" class="form-control" type="text" />
+        <div class="invalid-feedback">O telefone e obrigatorio</div>
+       </div>
+
+       <div class="col-4 mt-4">
+        <label class="form-label">E-mail</label>
+        <input id="email" class="form-control" type="text" />
+       </div>
+
+       <div class="col-4 mt-4">
+        <label class="form-label">Cidade</label>
+        <input id="cidade" class="form-control" type="text" />
+       </div>
+
+       <div class="col-4 mt-4">
+        <label class="form-label">Estado</label>
+        <select id="estado" class="form-select">
+            <option>Selecione</option>
+            <option>Parana</option>
+            <option>Sao Paulo</option>
+            <option>Mato Grosso</option>
+            <option>Minas Gerais</option>
+            <option>Para</option>
+        </select>
+       </div>
+       
+       <div class="col-4 mt-4">
+        <label class="form-label">Sexo</label>
+        <div class="form-check">
+            <input name="sexo" value="M" type="radio" class="form-check-input"/>
+            <label class="form-check-label">Masculino</label></div>
+
+            <div class="form-check">
+                <input name="sexo" value="F" type="radio" class="form-check-input"/>
+                <label class="form-check-label">Feminino</label></div>
+        </div>
+
+
+       <div class="col-4 mt-4">
+            <button id="bt-cadastrar" class="btn btn-primary">Cadastrar</button>
+       </div>
+    
+    </div>
+    
+</body>
+</html>
